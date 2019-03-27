@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+   
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+ <style>
+        div {
+          border: 1px solid lightblue;
+          background-color: lightblue;
+          padding-top: 50px;
+          padding-right: 30px;
+          padding-bottom: 50px;
+          padding-left: 80px;
+        }
+        </style>
+
+
+<script>
+function read()
+{
+    console.log("reading doone");
+    var n=document.getElementById("name").value;
+    var x=document.getElementById("email").value;
+    var y=document.getElementById("clg").value;
+    var z=document.getElementById("admn_no").value;
+    console.log(n);
+    console.log(x);
+    console.log(y);
+    console.log(z);
+}
+
+</script>
+
+
+
+</head>
+<body>
+        <div class="container">
+            <!-- comments -->
+            <h2>Nested Media Objects</h2>
+  <p>recent</p><br>
+  <div class="media border p-3">
+    <img src="Awesome-Photography-Deals.jpg
+    
+    " alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+    <div class="media-body">
+      <h4>John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div class="media p-3">
+        <img src="img_avatar2.png" alt="Jane Doe" class="mr-3 mt-3 rounded-circle" style="width:45px;">
+        <div class="media-body">
+          <h4>Jane Doe <small><i>Posted on February 20 2016</i></small></h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>  
+    </div>
+  </div>
+            <!-- navbar -->
+                <nav class="navbar navbar-expand-sm bg-light">
+                <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://www.google.com/">college data</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://www.google.com/">student data</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://www.google.com/">mark list</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled" href="#">Disabled</a>
+                        </li>
+                      </ul></nav>
+                      <!-- jumbotron -->
+                <div class="jumbotron"  background:color="grey">
+                  <h1>java-html combi test</h1>      
+                  <p>combination HTML, CSS, and JS </p>
+                </div>
+                <p>enter the following data</p>         
+                <h2>Student Data</h2>
+                <!-- form -->
+                <form >
+                  <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="text">college:</label>
+                    <input type="text" class="form-control" id="clg" placeholder="Enter College Name" name="college">
+                  </div>
+                  <div class="form-control">
+                        <label for="text">Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter name" name="admn">
+                      </div>
+                      <div class="form-control">
+                            <label for="admn_no">ADMN no:</label>
+                            <input type="text" class="form-control" id="admn_no" placeholder="Enter admn number" name="ADMN NO">
+                          </div>
+
+                  <div class="form-group form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                    </label>
+                  </div>
+                  <button type="button" class="btn btn-link" onclick="read();">LINKME</button>
+                </form>
+            
+            </div>
+
+</body>
+</html>
