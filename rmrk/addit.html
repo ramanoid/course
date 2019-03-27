@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title>Document</title>
+    
+    <script>
+    function add()
+    {
+        var n= parseInt(document.getElementById("n1").value);
+    var m = parseInt(document.getElementById("n2").value);
+    <div class="progress">
+                    <div class="progress-bar" style="width:70%"></div>
+                  </div>
+                  console.log(n+m);
+    }
+    function min()
+    {
+        var n= parseInt(document.getElementById("n1").value);
+    var m = parseInt(document.getElementById("n2").value);
+         console.log(m-n);
+    }
+    function mul()
+    {
+        var n= parseInt(document.getElementById("n1").value);
+    var m = parseInt(document.getElementById("n2").value);
+         console.log(m*n);
+    }
+    function div()
+    {
+        var n= parseInt(document.getElementById("n1").value);
+    var m = parseInt(document.getElementById("n2").value);
+         console.log(m/n);
+    }
+    </script>
+</head>
+<body>
+<div class="container">
+    <h1>addition and subtration</h1>
+    <div class="form-group">
+      <label for="number1">Number 1</label>
+      <input type="text" id="n1" placeholder="first">
+      <br>
+      <label for="number2">Number 2</label>
+      <input type="text" id="n2" placeholder="second">
+      <!-- <button type="button" onclick=add();>sum</button> -->
+      <!-- <button type="button" onclick=min();>subtract</button> -->
+      <div class="dropdown">
+            <button type="button" class="btn btn-primary" data-toggle="dropdown">
+             select
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" onclick=add();>summation</a>
+              <a class="dropdown-item" onclick=min();>subtration</a>
+              <a class="dropdown-item" onclick=mul()>multiplication</a>
+              <a class="dropdown-item" onclick=div()>division</a>
+              
+            </div>
+            <!-- progreas bar -->
+           
+                  
+                  
+          </div>
+          <p><strong>Note:</strong> select an operation
+</div>
+</body>
+</html>

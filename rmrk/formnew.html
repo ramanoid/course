@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+            function read()
+            {
+                console.log("reading doone");
+                var n=document.getElementById("name").value;
+                var x=document.getElementById("email").value;
+                var y=document.getElementById("clg").value;
+                var z=document.getElementById("admn_no").value;
+                console.log(n);
+                console.log(x);
+                console.log(y);
+                console.log(z);
+            }
+            
+            </script>
+
+
+</head>
+<body>
+   <div class="container">
+<form action="">
+        <div class="form-group"  >
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              </div>
+              <div class="form-group">
+                    <label for="name">name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+                  </div>
+                  <div class="form-group">
+                        <label for="DOB">D O B:</label>
+                        <input type="date" class="form-control" id="dob" placeholder="Enterdob" name="dob">
+                      </div>
+                      <div class="form-group">
+                            <label for="place">place:</label>
+                            <input type="text" class="form-control" id="place" placeholder="Enter place" name="place">
+                          </div>
+                          <div class="form-group">
+                                <label for="district">District:</label>
+                                <select class="form-control" id="dist" placeholder="select district" name="dist">
+                                    <option value="kollam"></option>
+                                    <option value="koz"></option>
+                              </div>
+                              <div class="form-group">
+                                    <label for="college">college:</label>
+                                    <input type="text" class="form-control" id="clg" placeholder="Enter college" name="clg">
+                                  </div>
+                                  <div class="form-group">
+                                        <label for="gender">Gender:</label>
+                                        <input type="radio" type="text" class="form-control" id="sex" placeholder="male" name="sex">
+                                        <input type="radio" type="text" class="form-control" id="sex" placeholder="male" name="sex">
+                                        <input type="radio" type="text" class="form-control" id="sex" placeholder="male" name="sex">
+                                      </div>
+                                     
+                                      <button type="button" class="btn btn-link" onclick="read();">LINKME</button>   
+
+</form>
+
+
+
+
+
+   </div>
+  
+    
+ </body>
+</html>
