@@ -1,15 +1,17 @@
-var a; var b;
-console.log('this is the add mod \n');
-module.exports.addn=(a,b)=>{ // this is es6 funstion def
+var a; 
+const express= require('express');
+a=express();
+a.get('/',(req,res)=>{
+  res.send('welcome tovFEFdFFFSfsaSvgj eertjbggghooty');
+  res.end();
+});
+a.get('/home',(req,res)=>{
+   res.write("this is the home");
+   res.end();
+});
+a.get('/about',(req,res)=>{
+    res.send('we are us \n\n\n\n this is us');
+    res.end();
+})
 
-   return (a+b);
-}
-module.exports.sbn=(a,b)=>{         
-    return a-b;
-}
-module.exports.dvn=(a,b)=>{
-      return (a/b);
-}
-module.exports.mln=(a,b)=>{
-    return a*b;
-}
+a.listen(8007);
