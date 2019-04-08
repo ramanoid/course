@@ -10,8 +10,9 @@ a.get('/home',(req,res)=>{
    res.end();
 });
 a.get('/about',(req,res)=>{
-    res.send('we are us \n\n\n\n this is us');
+    res.send('[{"name":"raghv","age":21},{"name":"sunitha","age":12}] ');
+    res.send("we are us \n\n\n\n this is us");
     res.end();
 })
 
-a.listen(8007);
+a.listen(3000);
